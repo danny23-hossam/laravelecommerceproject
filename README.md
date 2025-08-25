@@ -6,10 +6,6 @@
   </a>
 </p>
 
-## Project Links
-
-- [View GitHub Repository](https://github.com/danny23-hossam/laravelecommerceproject)
-- [Visit Live Site](https://laravelecommerceproject.onrender.com)
 
 ## About This Project
 
