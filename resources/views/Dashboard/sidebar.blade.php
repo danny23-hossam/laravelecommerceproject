@@ -28,6 +28,15 @@
              
               </li>
             </ul>
+
+
+
+
+
+
+
+
+
           </li>
           <li>
             <a href="javascript:;" class="has-arrow">
@@ -43,21 +52,27 @@
             </ul>
           </li>
           <li class="menu-label">UI Elements</li>
+
+
+         
+                   <ul class="metismenu" id="sidenav">
           <li>
             <a href="javascript:;" class="has-arrow">
-              <div class="parent-icon"><i class="material-icons-outlined">inventory_2</i>
+              <div class="parent-icon"><i class="material-icons-outlined">home</i>
               </div>
-              <div class="menu-title">Cards</div>
+              <div class="menu-title">Coupons</div>
             </a>
             <ul>
-              <li><a href="component-cards-basic.html"><i class="material-icons-outlined">arrow_right</i>Basic</a>
-              </li>       
-              <li><a href="component-cards-advance.html"><i class="material-icons-outlined">arrow_right</i>Advance</a>
+              <li><a href="{{ route("coupons.create") }}"><i class="material-icons-outlined">arrow_right</i>Create Coupon</a>
               </li>
-              <li><a href="component-cards-contact.html"><i class="material-icons-outlined">arrow_right</i>Contacts</a>
+               <li><a href="{{ route("coupons.index") }}"><i class="material-icons-outlined">arrow_right</i>Show Coupon</a>
+              </li>
+             
               </li>
             </ul>
-          </li>
+
+
+
           
           <li>
             <a href="javascript:;" class="has-arrow">

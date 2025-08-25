@@ -37,22 +37,31 @@
                         <li class="nav-item active">
                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                       <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Pages <span class="caret"></span></a>
-                           <ul class="dropdown-menu">
-                              <li><a href="about.html">About</a></li>
-                              <li><a href="testimonial.html">Testimonial</a></li>
-                           </ul>
-                        </li>
+                       
+                       
+                        
                         <li class="nav-item">
-                           <a class="nav-link" href="product.html">Products</a>
+<a href="{{ route('client.search') }}" class="nav-link btn btn-link pt-1 mx-2" style="padding: 0; border: none; background: none;">
+  Search
+</a>
                         </li>
+
                         <li class="nav-item">
-                           <a class="nav-link" href="blog_list.html">Blog</a>
+<a href="{{ route('filter') }}" class="nav-link btn btn-link pt-1 mx-2" style="padding: 0; border: none; background: none;">
+  Product
+</a>
                         </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
+
+
+                   
+<li class="nav-item">
+  <a class="nav-link" href="{{ route('wishlist.index') }}">
+      <i class="fa fa-heart"></i> Wishlist
+  </a>
+</li>
+
+
+
 
                         <li class="nav-item">
                           <form method="POST" action="{{ route('logout') }}">
@@ -64,7 +73,7 @@
                         </li>
                        
                         <li class="nav-item">
-                           <a class="nav-link" href="#">
+                           <a class="nav-link" href="{{ route("checkout.index") }}">
                               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                                  <g>
                                     <g>
@@ -119,11 +128,7 @@
                               </svg>
                            </a>
                         </li>
-                        <form class="form-inline">
-                           <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                           <i class="fa fa-search" aria-hidden="true"></i>
-                           </button>
-                        </form>
+                        
                      </ul>
                   </div>
                </nav>
@@ -526,6 +531,13 @@
                            <a href="" class="option2">
                            Buy Now
                            </a>
+
+                             <form action="{{ route("wishlist.add",$product->id) }}" method="POST" style="display:inline;">
+                @csrf
+                <button type="submit" class="btn btn-sm btn-outline-danger">
+                    <i class="fa fa-heart"></i> Add to Wishlist
+                </button>
+            </form>
                         </div>
                      </div>
                      <div class="img-box">
