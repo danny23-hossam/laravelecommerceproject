@@ -27,7 +27,7 @@ This is a **Laravel-based eCommerce application** with modern frontend tools lik
 
 ## 🚀 Live Demo
 
-Check out the live deployment here: [**Click to visit live site**](https://your-app-name.onrender.com)  
+Check out the live deployment here: [**Click to visit live site**][(https://your-app-name.onrender.com](https://github.com/danny23-hossam/laravelecommerceproject)  
 
 ---
 
